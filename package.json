@@ -1,0 +1,21 @@
+{
+  "name": "immobilier",
+  "version": "1.0.0",
+  "description": "immobilier et location voiture",
+  "main": "server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thierrysup",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.3.3",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^6.3.5"
+  }
+}
