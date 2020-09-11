@@ -15,6 +15,11 @@ const type_service = (sequelize, DataTypes) => {
             defaultValue: Sequelize.NOW
         }
     });
+
+    TypeService.associate = models => {
+        TypeService.hasMany(models.ServiceSocial, {as: "socialServices" })
+    }
+
     return TypeService;
 };
 

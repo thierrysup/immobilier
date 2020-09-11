@@ -1,11 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="54ec1568-183b-44b5-bcca-16b7e9f3fa1b" name="Default Changelist" comment="" />
+    <list default="true" id="54ec1568-183b-44b5-bcca-16b7e9f3fa1b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/database/models/car_location.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/models/house_location.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/config/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/models/maison.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/maison.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/models/service_social.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/service_social.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/models/type_service.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/type_service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/database/models/vehicule.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/database/models/vehicule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -34,12 +72,25 @@
       <updated>1599538957923</updated>
       <workItem from="1599538962382" duration="210000" />
       <workItem from="1599616677947" duration="273000" />
-      <workItem from="1599616968175" duration="6045000" />
+      <workItem from="1599616968175" duration="17641000" />
+      <workItem from="1599798424345" duration="6791000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="29" key="SettingsEditor" timestamp="1599623064316">

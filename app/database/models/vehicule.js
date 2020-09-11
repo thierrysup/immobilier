@@ -31,6 +31,32 @@ const car = (sequelize, DataTypes) => {
                 notEmpty: true,
             }
         },
+        mileage: {
+            type: DataTypes.INTEGER,
+            defaultValue: 0
+        },
+        fuel: {
+            type: DataTypes.STRING(16),
+            allowNull: false,
+            validate: {
+                notEmpty: true,
+            },
+        },
+        transmission: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                notEmpty: true,
+            },
+        },
+        year: {
+            type: DataTypes.INTEGER,
+            defaultValue: 1990,
+            allowNull: false,
+            validate: {
+                notEmpty: true,
+            }
+        },
         description: {
             type: DataTypes.STRING,
             allowNull: false,
@@ -42,6 +68,18 @@ const car = (sequelize, DataTypes) => {
         isDriver: {
             type: DataTypes.BOOLEAN,
             defaultValue: true
+        },
+        isOccupied: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
+        },
+        status: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
+        },
+        enable: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
         },
         profileImage: {
             type: DataTypes.STRING,
@@ -64,7 +102,11 @@ const car = (sequelize, DataTypes) => {
         }
     });
 
-    return User;
+    Car.associate = models => {
+        Car.belongsTo(models.User, { as: 'owner', constraints: true });
+    };
+
+    return Car;
 };
 
-export default user;
+export default car;

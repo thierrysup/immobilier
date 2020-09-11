@@ -47,9 +47,7 @@ const maison = (sequelize, DataTypes) => {
             type: DataTypes.STRING,
         },
         period: {
-            type: DataTypes.ENUM({
-                values: ['DAILY', 'WEEKLY', 'MONTHLY']
-            }),
+            type: DataTypes.STRING(16),
             allowNull: false,
             validate: {
                 notEmpty: true,
@@ -61,7 +59,13 @@ const maison = (sequelize, DataTypes) => {
         }
     });
 
-    return User;
+    Maison.associate = models => {
+        Maison.belongsTo(models.User, { as: 'owner', constraints: true });
+        Maison.belongsToMany(models.ServiceSocial, {through: "house_social_service", as: "houses", foreignKey: "house_id"})
+    };
+
+
+    return Maison;
 };
 
-export default user;
+export default maison;

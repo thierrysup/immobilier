@@ -63,7 +63,14 @@ const user = (sequelize, DataTypes) => {
           defaultValue: Sequelize.NOW
       }
     });
-   
+
+    User.associate = models => {
+        User.hasMany(models.Maison, {as: "houses"});
+        User.hasMany(models.Vehicule, {as: "vehicules"});
+        //User.belongsToMany(models.Maison, {through: "maison_user", as: "housesLocations", foreignKey: "user_id"});
+        //User.belongsToMany(models.Vehicule, {through: "vehicule_user", as: "carsLocations", foreignKey: "user_id"});
+    }
+
     return User;
   };
    

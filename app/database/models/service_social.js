@@ -38,6 +38,12 @@ const service_social = (sequelize, DataTypes) => {
             defaultValue: Sequelize.NOW
         }
     });
+
+    ServiceSocial.associate = models => {
+        ServiceSocial.belongsTo(models.TypeService, { as: 'typeService', constraints: true });
+        ServiceSocial.belongsToMany(models.Maison, {through: "house_social_service", as: "socialServices", foreignKey: "service_id"})
+    }
+
     return ServiceSocial;
 };
 
